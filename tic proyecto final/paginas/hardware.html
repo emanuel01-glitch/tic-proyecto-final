@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Explorando la Computadora</title>
+
+    <link rel="stylesheet" href="../style.CSS">
+</head>
+<body>
+    <header>
+        <h1>💻 Explorando la Computadora</h1>
+        <p>Un entorno digital para aprender informática</p>
+    </header>
+
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav>
+        <a href="../index.HTML">Inicio</a>
+        <a href="computadora.html">¿Qué es una computadora?</a>
+        <a href="hardware.html">Hardware</a>
+        <a href="estructura.html">Estructura funcional</a>
+        <a href="actividades.html">Actividades</a>
+        <a href="Acuerdo.html">Acuerdo de convivencia</a>     
+    </nav>
+        <main>
+            <!-- SECCIÓN HARDWARE -->
+                    <section id="hardware">
+
+            <h2>🔧 Hardware</h2>
+
+                <p>
+                 El hardware es el conjunto de componentes físicos de
+                una computadora. Son las partes que podemos ver y tocar.
+                </p>
+
+            <h3>🧩 Componentes internos</h3>
+
+                <p>
+            Explorá cada componente para conocer cuál es su función
+            dentro de la computadora.
+                </p>
+
+
+            <div class="hardware-grid">
+
+<!-- PLACA MADRE -->
+                <article class="hardware-card">
+                    <div class="hardware-icon">
+                    🧩
+                    </div>
+                <h4>Placa madre</h4>
+                    <p>
+                    Es la principal placa electrónica de la computadora.
+                    </p>
+                <details class="hardware-componentes">
+                    <summary>Ver más</summary>
+                        <div class="hardware-info">
+                            <p>
+                La placa madre permite conectar y comunicar
+                diferentes componentes de la computadora.
+                            </p>
+                        </div>
+                </details>
+                </article>
+                <!-- PROCESADOR -->
+                <article class="hardware-card">
+                    <div class="hardware-icon">
+                    ⚙️
+                    </div>
+                <h4>Procesador (CPU)</h4>
+                    <p>
+                Es uno de los componentes encargados de procesar
+                las instrucciones.
+                    </p>
+
+                <details class="hardware-componentes">
+                    <summary>Ver más</summary>
+                        <div class="hardware-info">
+                            <p>
+                    El procesador ejecuta instrucciones y realiza
+                    operaciones necesarias para procesar los datos.
+                            </p>
+                        </div>
+
+                </article>
+        <!-- MEMORIA RAM -->
+                <article class="hardware-card">
+                    <div class="hardware-icon">
+                        🧠
+                    </div>
+
+                <h4>Memoria RAM</h4>
+                    <p>
+                Es una memoria utilizada temporalmente mientras
+                trabajamos con la computadora.
+                    </p>
+
+                <details class="hardware-componentes">
+                    <summary>Ver más</summary>
+                        <div class="hardware-info">
+                            <p>
+                        La RAM almacena temporalmente datos y programas
+                        que están siendo utilizados.
+                            </p>
+                        </div>
+                </details>
+                </article>
+
+
+        <!-- PLACA DE VIDEO -->
+                <article class="hardware-card">
+                    <div class="hardware-icon">
+                    🎮
+                    </div>
+                    <h4>Placa de video (GPU)</h4>
+
+                        <p>
+                        Es un componente especializado en el procesamiento
+                        de gráficos e imágenes.
+            <           /p>
+                    <details class="hardware-componentes">
+                        <summary>Ver más</summary>
+                            <div class="hardware-info">
+                                <p>
+                            La GPU procesa gráficos e imágenes y es
+                            especialmente importante en videojuegos,
+                            edición de video y aplicaciones 3D.
+                                </p>
+                            </div>
+                    </details>
+                </article>
+            </div>
+
+<!-- IMAGEN INTERACTIVA -->
+    <div class="explorador-hardware">
+        <h3>🔎 Explorá una computadora por dentro</h3>
+        <p>
+        Observá la imagen y hacé clic en los puntos para descubrir
+        qué componente se encuentra en cada lugar.
+    </p>
+    <div class="imagen-pc">
+
+        <!-- IMAGEN -->
+        <img src="../img/pc-interior.jpg"
+             alt="Interior de una computadora de escritorio">
+
+<!-- PUNTO CPU -->
+<input type="checkbox" id="cpu" class="activar-componente">
+
+<label for="cpu"
+       class="punto-hardware punto-cpu"
+       aria-label="Mostrar información del procesador">
+    ●
+</label>
+<div class="texto-cpu">
+    <strong>Procesador (CPU)</strong>
+    <p>Es el componente que procesa las instrucciones y realiza los cálculos necesarios para que la computadora funcione.</p>
+</div>
+        <!-- PUNTO RAM -->
+        <input type="checkbox" id="ram" class="activar-componente">
+        <label for="ram"
+               class="punto-hardware punto-ram"
+               aria-label="Mostrar información de la memoria RAM">
+            ●
+        </label>
+        <div class="texto-ram">
+            <strong>Memoria RAM</strong>
+            <p>Es una memoria utilizada temporalmente mientras trabajamos con la computadora.</p>
+        </div>
+        <!-- PUNTO GPU -->
+        <input type="checkbox" id="gpu" class="activar-componente">
+        <label for="gpu"
+               class="punto-hardware punto-gpu"
+               aria-label="Mostrar información de la placa de video">
+            ●
+        </label>
+        <div class="texto-gpu">
+            <strong>Placa de video (GPU)</strong>
+            <p>Es un componente especializado en el procesamiento de gráficos e imágenes.</p>
+        </div>
+
+        <!-- PUNTO PLACA MADRE -->
+        <input type="checkbox" id="madre" class="activar-componente"> /* Checkbox para activar la información de la placa madre */
+        <label for="madre" 
+               class="punto-hardware punto-madre"
+               aria-label="Mostrar información de la placa madre">
+            ●
+        </label>
+        <div class="texto-madre">
+            <strong>Placa madre</strong>
+            <p>Es el componente principal que conecta todos los demás componentes de la computadora.</p>
+        </div>
+                
+    </div>
+    
+ </div>
+     </section>
+        </main>
+     <footer>
+
+        <p>
+            Entorno digital educativo - Informática
+        </p>
+
+    </footer>
+ 
+</body>
+</html>

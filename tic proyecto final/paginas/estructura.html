@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Explorando la Computadora</title>
+
+    <link rel="stylesheet" href="../style.CSS">
+</head>
+ <!-- ENCABEZADO -->
+    <header>
+        <h1>💻 Explorando la Computadora</h1>
+        <p>Un entorno digital para aprender informática</p>
+    </header>
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav>
+        <a href="../index.HTML">Inicio</a>
+        <a href="computadora.html">¿Qué es una computadora?</a>
+        <a href="hardware.html">Hardware</a>
+        <a href="estructura.html">Estructura funcional</a>
+        <a href="actividades.html">Actividades</a>
+        <a href="Acuerdo.html">Acuerdo de convivencia</a>
+    </nav>
+<body>
+    <main>
+        <!-- ESTRUCTURA FUNCIONAL -->
+        <section id="estructura">
+            <h2>🧠 ¿Cómo funciona una computadora?</h2>
+                <p>
+        Una computadora puede entenderse como un sistema que recibe
+        información, la procesa, puede almacenarla y finalmente
+        produce un resultado.
+                </p>
+                <p class="instruccion">
+        👆 Hacé clic en cada etapa para descubrir qué sucede.
+                </p>
+    <!-- DIAGRAMA -->
+        <div class="diagrama-funcional">
+        <!-- ENTRADA -->
+        <button class="etapa"
+                onclick="mostrarEtapa('entrada')">
+        </button>
+        </div>
+        </section>
+            <span class="etapa-icono">📥</span>
+            <span class="etapa-titulo">
+                Entrada
+            </span>
+            <span class="etapa-descripcion">
+                Recibimos información
+            </span>
+        </button>
+        <div class="flecha">
+            ➜
+        </div>
+        <!-- PROCESAMIENTO -->
+        <button class="etapa"
+                onclick="mostrarEtapa('procesamiento')">
+            <span class="etapa-icono">⚙️</span>
+            <span class="etapa-titulo">
+                Procesamiento
+            </span>
+            <span class="etapa-descripcion">
+                Se procesan los datos
+            </span>
+        </button>
+        <div class="flecha">
+            ➜
+        </div>
+        <!-- MEMORIA -->
+        <button class="etapa"
+                onclick="mostrarEtapa('memoria')">
+            <span class="etapa-icono">🧠</span>
+            <span class="etapa-titulo">
+                Memoria
+            </span>
+            <span class="etapa-descripcion">
+                Se mantienen datos
+            </span>
+        </button>
+        <div class="flecha">
+            ➜
+        </div>
+        <!-- SALIDA -->
+        <button class="etapa"
+                onclick="mostrarEtapa('salida')">
+            <span class="etapa-icono">📤</span>
+            <span class="etapa-titulo">
+                Salida
+            </span>
+            <span class="etapa-descripcion">
+                Obtenemos un resultado
+            </span>
+        </button>
+    </div>
+    <!-- INFORMACIÓN DE CADA ETAPA -->
+    <div id="info-etapa" class="info-etapa">
+    
+        <h3 id="titulo-etapa">
+            👆 Seleccioná una etapa
+        </h3>
+        <p id="texto-etapa">
+            Hacé clic en cualquiera de los bloques del diagrama
+            para conocer qué función cumple.
+        </p>
+    </div>
+    <!-- EJEMPLO -->
+    <div class="ejemplo-funcional">
+        <h3>💡 Pensemos en un ejemplo</h3>
+        <p>
+            Imaginá que escribís una palabra utilizando el teclado.
+        </p>
+        <div class="ejemplo-pasos">
+            <div>
+                ⌨️
+                <strong>Escribís</strong>
+            </div>
+            <span>→</span>
+            <div>
+                ⚙️
+                <strong>Se procesa</strong>
+            </div>
+            <span>→</span>
+            <div>
+                🧠
+                <strong>Se utiliza memoria</strong>
+            </div>
+            <span>→</span>
+            <div>
+                🖥️
+                <strong>Lo ves</strong>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>
+            Entorno digital educativo - Informática
+        </p>
+    </footer>
+</body>
+</html>

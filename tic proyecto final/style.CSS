@@ -1,0 +1,653 @@
+/* CONFIGURACIÓN GENERAL*/
+* {       /*SE REINICIA EL MARGEN Y EL PADDING (relleno) DE TODOS LOS ELEMENTOS*/
+    box-sizing: border-box; /* Incluye el borde y el relleno en el ancho y alto de los elementos */
+    margin: 0;
+    padding: 0;
+}
+html {    
+    scroll-behavior: smooth;/* Permite un desplazamiento suave al hacer clic en enlaces internos */
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #263238;
+    line-height: 1.6;
+}
+/*ENCABEZADO*/
+header {
+    background: linear-gradient(135deg, #2563eb, #4f46e5);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+header p {
+    font-size: 19px;
+}
+/* MENÚ DE NAVEGACIÓN */
+nav {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+}
+nav a {
+    text-decoration: none;
+    color: #263238;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+nav a:hover {
+    background-color: #2563eb;
+    color: white;
+}
+/* CONTENIDO PRINCIPAL */
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 20px;
+}
+section {
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+section h2 { /* TÍTULO DE CADA SECCIÓN */
+    color: #2563eb;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+section h3 { /* SUBTÍTULO DE CADA SECCIÓN */
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #374151;
+}
+section p {
+    margin-bottom: 15px;
+}
+/* LISTA DE HARDWARE */
+ul {
+    margin-left: 25px;
+}
+li {
+    margin-bottom: 8px;
+}
+/* ESTRUCTURA FUNCIONAL */
+#estructura div {
+    background-color: #eef2ff;
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+#estructura div p {
+    font-size: 20px;
+    font-weight: bold;
+}
+/* PIE DE PÁGINA */
+footer {
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+/* ADAPTACIÓN PARA CELULARES */
+@media (max-width: 700px) {
+    header h1 {
+        font-size: 30px;
+    }
+    header p {
+        font-size: 16px;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+    section {
+        padding: 25px 20px;
+    }
+}
+/*TARJETAS DE HARDWARE*/
+.hardware-grid {
+    display: grid;  /* Utiliza un diseño de cuadrícula para organizar las tarjetas de hardware */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 25px;
+    margin-top: 25px;
+}
+.hardware-card { /* Cada tarjeta de hardware tiene un fondo claro, borde, y un efecto de transición al pasar el mouse */
+    background-color: #f8fafc;
+    border: 2px solid #e2e8f0;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.hardware-card:hover { /* Al pasar el mouse sobre la tarjeta, se eleva ligeramente y se agrega una sombra */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+.hardware-icon {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+.hardware-card h4 {
+    font-size: 22px;
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+.hardware-card p {
+    color: #475569;
+}
+.hardware-card button { /* Botón dentro de la tarjeta de hardware con estilo y transición al pasar el mouse */
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+.hardware-card button:hover {
+    background-color: #1d4ed8;
+}
+/*Botón Ver más*/
+.hardware-componentes {
+    margin-top: 10px;
+}
+.hardware-componentes summary { /* Botón de resumen que funciona como un botón "Ver más" con estilo y transición al pasar el mouse */
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    list-style: none;
+    transition: 0.3s;
+}
+.hardware-componentes summary:hover {
+    background-color: #0b34a5;
+}
+
+/* Información que aparece al apretar Ver más */
+.hardware-info {   
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #bce953;
+    border-radius: 10px;
+    text-align: left;
+}
+.hardware-info p {
+    margin: 0;
+}
+/* Adaptación para celulares */
+@media (max-width: 700px) {
+    .hardware-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* DIAGRAMA FUNCIONAL */
+.instruccion {
+    background-color: #eef2ff;
+    padding: 12px 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+}
+/* CONTENEDOR DEL DIAGRAMA */
+.diagrama-funcional {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+/* CADA ETAPA */
+.etapa {
+    width: 180px;
+    min-height: 150px;
+    border: 2px solid #dbeafe;
+    border-radius: 15px;
+    background-color: white;
+    padding: 20px;
+
+    cursor: pointer; /* Cambia el cursor al pasar sobre la etapa */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    font-family: inherit;
+}
+/* EFECTO AL PASAR EL MOUSE */
+.etapa:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    border-color: #2563eb;
+}
+/* ICONO */
+.etapa-icono {
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+/* TÍTULO */
+.etapa-titulo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2563eb;
+    margin-bottom: 5px;
+}
+/* DESCRIPCIÓN */
+.etapa-descripcion {
+    font-size: 14px;
+    color: #64748b;
+}
+/* FLECHAS */
+.flecha {
+    font-size: 35px;
+    color: #2563eb;
+    font-weight: bold;
+}
+/* ETAPA SELECCIONADA */
+.etapa.activa {
+    background-color: #2563eb;
+    border-color: #2563eb;
+    transform: scale(1.05);
+}
+.etapa.activa .etapa-titulo,
+.etapa.activa .etapa-descripcion {
+    color: white;
+}
+/* INFORMACIÓN DE LA ETAPA */
+.info-etapa { /* Contenedor de la información que aparece al seleccionar una etapa */
+    background-color: #f1f5f9;
+    border-left: 5px solid #2563eb;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 25px;
+    min-height: 120px;
+    transition: 0.3s;
+}
+.info-etapa h3 {
+    color: #2563eb;
+    margin-top: 0;
+}
+/* EJEMPLO */
+.ejemplo-funcional {
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #f8fafc;
+    border-radius: 15px;
+}
+
+.ejemplo-funcional h3 {
+    color: #2563eb;
+}
+.ejemplo-pasos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.ejemplo-pasos div {
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    min-width: 130px;
+    font-size: 25px;
+}
+.ejemplo-pasos strong {
+    display: block;
+    font-size: 14px;
+    margin-top: 5px;
+    color: #475569;
+}
+/* ========================================
+   CELULARES
+   ======================================== */
+@media (max-width: 900px) {
+    .flecha {
+        transform: rotate(90deg);
+    }
+    .diagrama-funcional {
+        flex-direction: column;
+    }
+}
+/* ========================================
+   EXPLORADOR DE HARDWARE
+   ======================================== */
+.explorador-hardware {
+    margin-top: 45px;
+    padding-top: 30px;
+    border-top: 2px solid #e2e8f0;
+}
+.explorador-hardware h3 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+/* CONTENEDOR DE LA IMAGEN */
+.imagen-pc {
+    position: relative;
+    max-width: 600px;
+    margin: 30px auto;
+}
+/* IMAGEN */
+.imagen-pc img {
+    width: 90%;
+    display: block;
+    border-radius: 15px;
+}
+/* PUNTOS */
+
+.punto-hardware {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 30%;
+    border: 2px solid white;
+    background-color: #2563eb;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+.punto-hardware:hover {
+    transform: scale(1.3);
+}
+/* POSICIONES DE LOS PUNTOS */
+.punto-ram {
+    top: 28%;
+    left: 45%;
+}
+.punto-gpu {
+    top: 53%;
+    left: 33%;
+}
+.punto-madre {
+    top: 65%;
+    left: 42%;
+}
+/* INFORMACIÓN */
+.info-componente {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #eef2ff;
+    border-left: 5px solid #2563eb;
+    border-radius: 10px;
+}
+.info-componente h4 {
+    color: #2563eb;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+/* Ocultar el checkbox */
+.activar-componente {
+    display: none;
+}
+
+/* El punto funciona como un botón */
+.punto-hardware {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 30%;
+    border: 2px solid white;
+    background-color: #2563eb;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+.punto-hardware:hover {
+    transform: scale(1.3);
+}
+
+/* Posición del punto CPU */
+.punto-cpu {
+    top: 30%;
+    left: 30%;
+}
+
+/* Texto oculto inicialmente */
+.texto-cpu {
+    display: none;
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    width: 220px;
+    padding: 12px;
+    background-color: white;
+    border: 2px solid #2563eb;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+.texto-ram {
+    display: none;
+    position: absolute;
+    top: 34%;
+    left: 45%;
+    width: 220px;
+    padding: 12px;
+    background-color: white;
+    border: 2px solid #2563eb;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+.texto-gpu {
+    display: none;
+    position: absolute;
+    top: 58%;
+    left: 33%;
+    width: 220px;
+    padding: 12px;
+    background-color: white;
+    border: 2px solid #2563eb;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+.texto-madre {
+    display: none;
+    position: absolute;
+    top: 68%;
+    left: 43%;
+    width: 220px;
+    padding: 12px;
+    background-color: white;
+    border: 2px solid #2563eb;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+/* Mostrar el texto cuando se presiona el punto */
+#cpu:checked ~ .texto-cpu,
+#ram:checked ~ .texto-ram,
+#gpu:checked ~ .texto-gpu,
+#madre:checked ~ .texto-madre {
+    display: block;
+}
+
+
+/* CUESTIONARIO DE INFORMÁTICA */
+
+.quiz {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* ENCABEZADO DEL QUIZ */
+.encabezado-quiz {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 25px;
+    background-color: #1e3a8a;
+    color: white;
+    border-radius: 15px;
+}
+
+.encabezado-quiz h1 {
+    margin-top: 0;
+    font-size: 32px;
+}
+
+.encabezado-quiz p {
+    line-height: 1.6;
+}
+
+/* TARJETAS DE LAS PREGUNTAS */
+.pregunta {
+    background-color: white;
+    padding: 22px;
+    margin-bottom: 22px;
+    border: 2px solid #dbeafe;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-color: #7daceb;
+}
+
+/* EFECTO AL PASAR EL MOUSE */
+.pregunta:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    border-color: #2563eb;
+}
+
+/* TÍTULO DE CADA PREGUNTA */
+.pregunta h2 {
+    color: #1e3a8a;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+/* OCULTAR LOS BOTONES DE OPCIÓN ORIGINALES */
+.pregunta input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+/* DISEÑO DE LAS OPCIONES */
+.pregunta label {
+    display: block;
+    padding: 13px 15px;
+    margin: 10px 0;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background-color: #f8fafc;
+    cursor: pointer;
+    line-height: 1.5;
+    transition: background-color 0.2s,
+                border-color 0.2s;
+}
+
+/* CAMBIO DE COLOR AL PASAR EL MOUSE */
+.pregunta label:hover {
+    background-color: #eff6ff;
+    border-color: #60a5fa;
+}
+
+/* RESALTAR LA OPCIÓN SELECCIONADA */
+.pregunta input[type="radio"]:checked + label {
+    background-color: #dbeafe;
+    border: 2px solid #2563eb;
+    color: #1e3a8a;
+    font-weight: bold;
+}
+
+/* INDICACIÓN FINAL */
+.indicacion-quiz {
+    text-align: center;
+    padding: 15px;
+    color: #475569;
+    font-style: italic;
+}
+/* AJUSTES PARA CELULARES */
+@media (max-width: 600px) {
+    .quiz {
+        margin: 15px auto;
+        padding: 12px;
+    }
+    .encabezado-quiz {
+        padding: 18px;
+    }
+    .encabezado-quiz h1 {
+        font-size: 26px;
+    }
+    .pregunta {
+        padding: 16px;
+    }
+    .pregunta h2 {
+        font-size: 18px;
+    }
+}
+/* MENSAJES OCULTOS de las preguntas */
+.pregunta .correcto,
+.pregunta .incorrecto {
+    display: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+/* MENSAJE DE RESPUESTA CORRECTA */
+.pregunta .correcto {
+    color: #44d17a;
+    background-color: #dcfce7;
+}
+/* MENSAJE DE RESPUESTA INCORRECTA */
+.pregunta .incorrecto {
+    color: #d46868;
+    background-color: #fee2e2;
+}
+/* MOSTRAR LA DEVOLUCIÓN SEGÚN LA OPCIÓN */
+#p1a:checked + label + .correcto {
+    display: block;
+}
+#p1b:checked + label + .incorrecto,
+#p1c:checked + label + .incorrecto {
+    display: block;
+}
