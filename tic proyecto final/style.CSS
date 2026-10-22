@@ -651,3 +651,267 @@ footer {
 #p1c:checked + label + .incorrecto {
     display: block;
 }
+/* ESTILOS DE PAGINA: ¿QUE ES UNA COMPUTADORA? */
+.pagina-computadora section {
+    margin-bottom: 28px;
+}
+.pagina-computadora .presentacion-computadora {
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    align-items: center;
+    gap: 28px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #ffffff 55%, #eff6ff);
+}
+.etiqueta-seccion {
+    display: inline-block;
+    color: #1d4ed8;
+    background: #dbeafe;
+    border-radius: 999px;
+    padding: 6px 12px;
+    margin-bottom: 12px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .08em;
+}
+.pagina-computadora .presentacion-computadora h2 {
+    font-size: clamp(30px, 4vw, 42px);
+    line-height: 1.15;
+    margin-bottom: 16px;
+}
+.pagina-computadora .bajada {
+    font-size: 20px;
+    color: #475569;
+    font-weight: 600;
+}
+.ilustracion-computadora {
+    margin: 0;
+    text-align: center;
+}
+.ilustracion-computadora img {
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+}
+.ilustracion-computadora figcaption {
+    color: #64748b;
+    font-size: 13px;
+    margin-top: -8px;
+}
+.enlace-destacado {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 8px;
+    color: #1d4ed8;
+    font-weight: 700;
+    text-decoration: none;
+}
+.enlace-destacado:hover {
+    text-decoration: underline;
+}
+.pagina-computadora .bloque-lectura {
+    border-left: 5px solid #60a5fa;
+}
+.dato-curioso {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-top: 24px;
+    padding: 20px;
+    border-radius: 12px;
+    background: #eff6ff;
+}
+.dato-icono {
+    font-size: 30px;
+}
+.dato-curioso h3 {
+    margin: 0 0 6px;
+    color: #1d4ed8;
+}
+.dato-curioso p {
+    margin-bottom: 0;
+}
+.usos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 24px;
+}
+.uso-card {
+    padding: 22px 18px;
+    border: 1px solid #dbeafe;
+    border-radius: 14px;
+    background: #f8fbff;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+.uso-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, .12);
+}
+.uso-icono {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+.uso-card h3 {
+    margin: 0 0 8px;
+    color: #1d4ed8;
+}
+.uso-card p {
+    margin: 0;
+    font-size: 15px;
+}
+.pasos-computadora {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 14px;
+    margin: 26px 0;
+}
+.paso-computadora {
+    position: relative;
+    flex: 1;
+    min-width: 0;
+    padding: 24px 18px;
+    border: 1px solid #dbeafe;
+    border-radius: 14px;
+    background: #f8fbff;
+    text-align: center;
+}
+.paso-numero {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    display: grid;
+    place-items: center;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    color: white;
+    background: #2563eb;
+    font-size: 13px;
+    font-weight: 700;
+}
+.paso-icono {
+    display: block;
+    font-size: 36px;
+    margin: 10px 0;
+}
+.paso-computadora h3 {
+    margin: 8px 0;
+    color: #1d4ed8;
+}
+.paso-computadora p {
+    margin-bottom: 0;
+    font-size: 15px;
+}
+.flecha-paso {
+    align-self: center;
+    color: #2563eb;
+    font-size: 28px;
+    font-weight: 700;
+}
+.nota-aclaratoria {
+    padding: 14px 18px;
+    background: #f1f5f9;
+    border-radius: 10px;
+    font-size: 14px;
+}
+.nota-aclaratoria a {
+    color: #1d4ed8;
+    font-weight: 700;
+}
+.recurso-final {
+    display: grid;
+    grid-template-columns: 1.2fr .8fr;
+    align-items: center;
+    gap: 24px;
+    background: #eff6ff;
+}
+.recurso-final h2 {
+    margin-bottom: 12px;
+}
+.boton-recurso {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 12px 18px;
+    border-radius: 9px;
+    background: #2563eb;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background .2s ease, transform .2s ease;
+}
+.boton-recurso:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+.video-ilustrado {
+    display: grid;
+    place-items: center;
+    min-height: 190px;
+    padding: 24px;
+    border-radius: 14px;
+    color: white;
+    text-align: center;
+    background: linear-gradient(135deg, #1e40af, #6366f1);
+}
+.video-ilustrado span {
+    display: grid;
+    place-items: center;
+    width: 62px;
+    height: 62px;
+    padding-left: 4px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.2);
+    border: 2px solid rgba(255,255,255,.75);
+    font-size: 25px;
+}
+.video-ilustrado p {
+    margin: 12px 0 0;
+    font-weight: 700;
+}
+.cierre-aprendizaje {
+    text-align: center;
+    background: #f8fafc;
+    border: 1px solid #dbeafe;
+}
+.cierre-aprendizaje h2 {
+    margin-bottom: 10px;
+}
+.cierre-aprendizaje p {
+    max-width: 720px;
+    margin: 0 auto 12px;
+}
+.pagina-computadora nav a[aria-current="page"] {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+@media (max-width: 900px) {
+    .usos-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .pagina-computadora .presentacion-computadora,
+    .recurso-final {
+        grid-template-columns: 1fr;
+    }
+    .ilustracion-computadora img {
+        max-width: 380px;
+    }
+}
+@media (max-width: 650px) {
+    .usos-grid {
+        grid-template-columns: 1fr;
+    }
+    .pasos-computadora {
+        flex-direction: column;
+    }
+    .flecha-paso {
+        transform: rotate(90deg);
+    }
+    .dato-curioso {
+        padding: 16px;
+    }
+}

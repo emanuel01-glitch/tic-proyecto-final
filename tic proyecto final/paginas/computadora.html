@@ -3,52 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Explorando la Computadora</title>
+    <meta name="description" content="Aprendé qué es una computadora, para qué sirve y cómo transforma datos en información.">
+    <title>¿Qué es una computadora? | Explorando la Computadora</title>
     <link rel="stylesheet" href="../style.CSS">
 </head>
 <body>
-     <header>
+    <header>
         <h1>💻 Explorando la Computadora</h1>
         <p>Un entorno digital para aprender informática</p>
     </header>
-    <!-- MENÚ DE NAVEGACIÓN -->
-    <nav>
+
+    <nav aria-label="Navegación principal">
         <a href="../index.HTML">Inicio</a>
-        <a href="computadora.html">¿Qué es una computadora?</a>
+        <a href="computadora.html" aria-current="page">¿Qué es una computadora?</a>
         <a href="hardware.html">Hardware</a>
         <a href="estructura.html">Estructura funcional</a>
         <a href="actividades.html">Actividades</a>
         <a href="Acuerdo.html">Acuerdo de convivencia</a>
     </nav>
-    <main>
-        <!-- SECCIÓN ¿QUÉ ES UNA COMPUTADORA? -->
-        <section id="computadora">
-            <h2>💻 ¿Qué es una computadora?</h2>
+
+    <main class="pagina-computadora">
+        <section class="presentacion-computadora" id="computadora">
+            <div class="presentacion-texto">
+                <span class="etiqueta-seccion">CONCEPTOS BÁSICOS</span>
+                <h2>¿Qué es una computadora?</h2>
+                <p class="bajada">Una herramienta digital que nos permite resolver tareas, crear, comunicarnos y aprender.</p>
+                <p>
+                    Una <strong>computadora</strong> es un dispositivo electrónico programable que recibe datos,
+                    los procesa siguiendo instrucciones y genera información útil. También puede guardar
+                    información para utilizarla más adelante o compartirla con otros dispositivos.
+                </p>
+                <a class="enlace-destacado" href="#como-funciona">Descubrí cómo funciona <span aria-hidden="true">↓</span></a>
+            </div>
+            <figure class="ilustracion-computadora">
+                <img src="../img/computadora-ilustración.jpg" alt="Ilustración de una computadora de escritorio sobre un escritorio">
+                <figcaption>Las computadoras pueden tener distintas formas y tamaños.</figcaption>
+            </figure>
+        </section>
+
+        <section id="nombre-computadora" class="bloque-lectura">
+            <h2>¿Por qué se llama computadora?</h2>
             <p>
-                Un computadora es una máquina digital programable, de funcionamiento electrónico, 
-                capaz de procesar grandes cantidades de datos a altas velocidades. 
-                La información así obtenida puede luego presentarse a un operador 
-                humano, o transmitirse a otros sistemas mediante redes informáticas.
+                La palabra <strong>computadora</strong> se relaciona con el verbo latino <em>computare</em>,
+                que significa contar o calcular. Al principio, muchas máquinas se utilizaban principalmente
+                para realizar cálculos; con el tiempo, sus posibilidades crecieron y hoy permiten realizar
+                muchísimas tareas diferentes.
             </p>
+            <aside class="dato-curioso">
+                <span class="dato-icono" aria-hidden="true">💡</span>
+                <div>
+                    <h3>Un dato para recordar</h3>
+                    <p>Una computadora no solo sirve para hacer cuentas: también permite escribir, dibujar, investigar, aprender y comunicarse.</p>
+                </div>
+            </aside>
+        </section>
+
+        <section id="usos">
+            <h2>¿Para qué utilizamos una computadora?</h2>
+            <p>Su utilidad depende de las necesidades de cada persona. Algunos ejemplos de uso son:</p>
+            <div class="usos-grid">
+                <article class="uso-card">
+                    <span class="uso-icono" aria-hidden="true">📚</span>
+                    <h3>Aprender</h3>
+                    <p>Buscar información, realizar actividades escolares y acceder a materiales educativos.</p>
+                </article>
+                <article class="uso-card">
+                    <span class="uso-icono" aria-hidden="true">✍️</span>
+                    <h3>Crear</h3>
+                    <p>Escribir documentos, diseñar presentaciones, editar imágenes y producir contenido.</p>
+                </article>
+                <article class="uso-card">
+                    <span class="uso-icono" aria-hidden="true">💬</span>
+                    <h3>Comunicarnos</h3>
+                    <p>Enviar mensajes, participar en videollamadas y compartir archivos.</p>
+                </article>
+                <article class="uso-card">
+                    <span class="uso-icono" aria-hidden="true">🎮</span>
+                    <h3>Entretenernos</h3>
+                    <p>Jugar, escuchar música, ver videos y explorar contenidos digitales.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="como-funciona">
+            <h2>¿Cómo funciona, en términos generales?</h2>
             <p>
-                La computadora, también llamada ordenador o computador, 
-                es la herramienta más versátil, potente y revolucionaria que el ser humano ha creado en su historia reciente. 
-                Representa un hito de la revolución científica y tecnológica del siglo XX, especialmente desde el período 
-                posterior a la Segunda Guerra Mundial.
+                Aunque puede realizar tareas muy complejas, podemos comprender su funcionamiento a través
+                de tres pasos básicos:
             </p>
-            <p>
-                ¿Por qué se llama “computadora”? 
-                Las palabras “computadora” y “computador” vienen de la voz latina computare, que significa “contar” o “calcular”. Esto se debe a que, 
-                fundamentalmente, las computadoras son aparatos de cálculo, 
-                ya que incluso los programas más complejos se reducen a un conjunto muy vasto y complejo de operaciones lógicas y aritméticas.
+            <div class="pasos-computadora" aria-label="Etapas generales del procesamiento de información">
+                <article class="paso-computadora">
+                    <span class="paso-numero">1</span>
+                    <span class="paso-icono" aria-hidden="true">⌨️</span>
+                    <h3>Recibe datos</h3>
+                    <p>Ingresamos información, por ejemplo, al escribir una palabra.</p>
+                </article>
+                <span class="flecha-paso" aria-hidden="true">→</span>
+                <article class="paso-computadora">
+                    <span class="paso-numero">2</span>
+                    <span class="paso-icono" aria-hidden="true">⚙️</span>
+                    <h3>Procesa</h3>
+                    <p>Ejecuta instrucciones para trabajar con los datos recibidos.</p>
+                </article>
+                <span class="flecha-paso" aria-hidden="true">→</span>
+                <article class="paso-computadora">
+                    <span class="paso-numero">3</span>
+                    <span class="paso-icono" aria-hidden="true">🖥️</span>
+                    <h3>Ofrece resultados</h3>
+                    <p>Muestra información, como una palabra en la pantalla.</p>
+                </article>
+            </div>
+            <p class="nota-aclaratoria">
+                Este es un ejemplo simplificado. En la página <a href="estructura.html">Estructura funcional</a>
+                podés profundizar en las etapas del procesamiento de la información.
             </p>
         </section>
+
+        <section id="video-recurso" class="recurso-final">
+            <div>
+                <span class="etiqueta-seccion">PARA SEGUIR APRENDIENDO</span>
+                <h2>Explorá el tema en video</h2>
+                <p>Podés buscar una explicación audiovisual sobre qué es una computadora y cómo se utiliza. Elegí un video educativo y miralo prestando atención a los ejemplos que presenta.</p>
+                <a class="boton-recurso" href="https://www.youtube.com/results?search_query=que+es+una+computadora+explicacion+para+estudiantes" target="_blank" rel="noopener noreferrer">Buscar videos educativos ↗</a>
+            </div>
+            <div class="video-ilustrado" aria-hidden="true">
+                <span>▶</span>
+                <p>Aprender también es explorar</p>
+            </div>
+        </section>
+
+        <section class="cierre-aprendizaje">
+            <h2>Antes de continuar...</h2>
+            <p>Intentá explicar con tus propias palabras qué es una computadora y mencioná dos actividades en las que podría ayudarte.</p>
+            <a class="enlace-destacado" href="actividades.html">Ir a las actividades <span aria-hidden="true">→</span></a>
+        </section>
     </main>
+
     <footer>
-        <p>
-            Entorno digital educativo - Informática
-        </p>
-    </footer>    
+        <p>Entorno digital educativo · Informática</p>
+    </footer>
 </body>
 </html>
