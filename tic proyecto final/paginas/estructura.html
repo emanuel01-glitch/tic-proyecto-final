@@ -38,12 +38,11 @@
     <!-- DIAGRAMA -->
         <div class="diagrama-funcional">
         <!-- ENTRADA -->
-        <button class="etapa"
-                onclick="mostrarEtapa('entrada')">
-        </button>
-        </div>
-        </section>
-            <span class="etapa-icono">📥</span>
+
+        <!-- PROCESAMIENTO -->
+        <button class="etapa"  
+                onclick="mostrarEtapa('entrada')">      
+                  <span class="etapa-icono">📥</span>
             <span class="etapa-titulo">
                 Entrada
             </span>
@@ -51,13 +50,9 @@
                 Recibimos información
             </span>
         </button>
-        <div class="flecha">
-            ➜
-        </div>
-        <!-- PROCESAMIENTO -->
-        <button class="etapa"
-                onclick="mostrarEtapa('procesamiento')">
-            <span class="etapa-icono">⚙️</span>
+            <div class="flecha"> ➜ </div>
+            <button class="etapa">
+        <span class="etapa-icono">⚙️</span>
             <span class="etapa-titulo">
                 Procesamiento
             </span>
@@ -65,10 +60,9 @@
                 Se procesan los datos
             </span>
         </button>
-        <div class="flecha">
-            ➜
-        </div>
-        <!-- MEMORIA -->
+            <div class="flecha"> ➜</div>
+        
+         <!-- MEMORIA -->
         <button class="etapa"
                 onclick="mostrarEtapa('memoria')">
             <span class="etapa-icono">🧠</span>
@@ -79,10 +73,8 @@
                 Se mantienen datos
             </span>
         </button>
-        <div class="flecha">
-            ➜
-        </div>
-        <!-- SALIDA -->
+        <div class="flecha">  ➜</div>
+<!-- SALIDA -->
         <button class="etapa"
                 onclick="mostrarEtapa('salida')">
             <span class="etapa-icono">📤</span>
@@ -94,6 +86,12 @@
             </span>
         </button>
     </div>
+        </section>
+        
+        
+       
+       
+        
     <!-- INFORMACIÓN DE CADA ETAPA -->
     <div id="info-etapa" class="info-etapa">
     
