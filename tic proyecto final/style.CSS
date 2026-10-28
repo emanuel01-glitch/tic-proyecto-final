@@ -20,7 +20,7 @@ body {
 }
 /*ENCABEZADO*/
 header {
-    background: linear-gradient(135deg, #2563eb, #4f46e5);
+    background: linear-gradient(135deg, #5e8cf0, #4f46e5);
     color: white;
     text-align: center;
     padding: 60px 20px;
@@ -35,14 +35,14 @@ header p {
 /* MENÚ DE NAVEGACIÓN */
 nav {
     background-color: #ffffff;
-    display: flex;
+    display: flex;  /* Utiliza un diseño flexible para organizar los enlaces de navegación */
     justify-content: center;
     gap: 10px;
     padding: 15px;
     position: sticky;
-    top: 0;
+    top: 0; /* Mantiene el menú de navegación fijo en la parte superior al hacer scroll */
     z-index: 100;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10); 
 }
 nav a {
     text-decoration: none;
@@ -63,7 +63,7 @@ main {
     padding: 30px 20px;
 }
 section {
-    background-color: white;
+    background-color: transparent;
     margin-bottom: 30px;
     padding: 35px;
     border-radius: 15px;
@@ -336,9 +336,7 @@ footer {
     margin-top: 5px;
     color: #475569;
 }
-/* ========================================
-   CELULARES
-   ======================================== */
+/* CELULARES*/
 @media (max-width: 900px) {
     .flecha {
         transform: rotate(90deg);
@@ -347,9 +345,7 @@ footer {
         flex-direction: column;
     }
 }
-/* ========================================
-   EXPLORADOR DE HARDWARE
-   ======================================== */
+/* EXPLORADOR DE HARDWARE */
 .explorador-hardware {
     margin-top: 45px;
     padding-top: 30px;
@@ -362,8 +358,8 @@ footer {
 /* CONTENEDOR DE LA IMAGEN */
 .imagen-pc {
     position: relative;
-    max-width: 600px;
-    margin: 30px auto;
+    max-width: 600px; /* Limita el ancho máximo de la imagen */
+    margin: 30px auto; /* Centra la imagen en la página */
 }
 /* IMAGEN */
 .imagen-pc img {
@@ -419,12 +415,10 @@ footer {
     font-size: 20px;
     margin-bottom: 8px;
 }
-
 /* Ocultar el checkbox */
 .activar-componente {
     display: none;
 }
-
 /* El punto funciona como un botón */
 .punto-hardware {
     position: absolute;
@@ -442,17 +436,14 @@ footer {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
     transition: 0.3s;
 }
-
-.punto-hardware:hover {
+.punto-hardware:hover {  /* Al pasar el mouse sobre el punto, se agranda ligeramente */
     transform: scale(1.3);
 }
-
 /* Posición del punto CPU */
 .punto-cpu {
     top: 30%;
     left: 30%;
 }
-
 /* Texto oculto inicialmente */
 .texto-cpu {
     display: none;
@@ -514,8 +505,6 @@ footer {
 #madre:checked ~ .texto-madre {
     display: block;
 }
-
-
 /* CUESTIONARIO DE INFORMÁTICA */
 
 .quiz {
@@ -523,7 +512,6 @@ footer {
     margin: 40px auto;
     padding: 20px;
 }
-
 /* ENCABEZADO DEL QUIZ */
 .encabezado-quiz {
     text-align: center;
@@ -533,16 +521,13 @@ footer {
     color: white;
     border-radius: 15px;
 }
-
 .encabezado-quiz h1 {
     margin-top: 0;
     font-size: 32px;
 }
-
 .encabezado-quiz p {
     line-height: 1.6;
 }
-
 /* TARJETAS DE LAS PREGUNTAS */
 .pregunta {
     background-color: white;
@@ -554,14 +539,12 @@ footer {
     transition: transform 0.3s, box-shadow 0.3s;
     border-color: #7daceb;
 }
-
 /* EFECTO AL PASAR EL MOUSE */
 .pregunta:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
     border-color: #2563eb;
 }
-
 /* TÍTULO DE CADA PREGUNTA */
 .pregunta h2 {
     color: #1e3a8a;
@@ -569,13 +552,11 @@ footer {
     margin-top: 0;
     margin-bottom: 18px;
 }
-
 /* OCULTAR LOS BOTONES DE OPCIÓN ORIGINALES */
 .pregunta input[type="radio"] {
     position: absolute;
     opacity: 0;
 }
-
 /* DISEÑO DE LAS OPCIONES */
 .pregunta label {
     display: block;
@@ -589,13 +570,11 @@ footer {
     transition: background-color 0.2s,
                 border-color 0.2s;
 }
-
 /* CAMBIO DE COLOR AL PASAR EL MOUSE */
 .pregunta label:hover {
     background-color: #eff6ff;
     border-color: #60a5fa;
 }
-
 /* RESALTAR LA OPCIÓN SELECCIONADA */
 .pregunta input[type="radio"]:checked + label {
     background-color: #dbeafe;
@@ -603,7 +582,6 @@ footer {
     color: #1e3a8a;
     font-weight: bold;
 }
-
 /* INDICACIÓN FINAL */
 .indicacion-quiz {
     text-align: center;
@@ -744,14 +722,14 @@ footer {
     gap: 16px;
     margin-top: 24px;
 }
-.uso-card {
+.uso-tarjeta {
     padding: 22px 18px;
     border: 1px solid #dbeafe;
     border-radius: 14px;
     background: #f8fbff;
     transition: transform .2s ease, box-shadow .2s ease;
 }
-.uso-card:hover {
+.uso-tarjeta:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 20px rgba(37, 99, 235, .12);
 }
@@ -760,11 +738,11 @@ footer {
     margin-bottom: 10px;
     font-size: 32px;
 }
-.uso-card h3 {
+.uso-tarjeta h3 {
     margin: 0 0 8px;
     color: #1d4ed8;
 }
-.uso-card p {
+.uso-tarjeta p {
     margin: 0;
     font-size: 15px;
 }
@@ -838,21 +816,6 @@ footer {
 .recurso-final h2 {
     margin-bottom: 12px;
 }
-.boton-recurso {
-    display: inline-block;
-    margin-top: 8px;
-    padding: 12px 18px;
-    border-radius: 9px;
-    background: #2563eb;
-    color: #fff;
-    font-weight: 700;
-    text-decoration: none;
-    transition: background .2s ease, transform .2s ease;
-}
-.boton-recurso:hover {
-    background: #1d4ed8;
-    transform: translateY(-2px);
-}
 .video-ilustrado {
     display: grid;
     place-items: center;
@@ -880,7 +843,7 @@ footer {
 }
 .cierre-aprendizaje {
     text-align: center;
-    background: #f8fafc;
+    background: #74e2c7;
     border: 1px solid #dbeafe;
 }
 .cierre-aprendizaje h2 {
@@ -894,6 +857,7 @@ footer {
     background: #dbeafe;
     color: #1d4ed8;
 }
+/* ADAPTACIÓN PARA CELULARES */
 @media (max-width: 900px) {
     .usos-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
