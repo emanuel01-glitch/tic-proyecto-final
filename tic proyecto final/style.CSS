@@ -272,6 +272,19 @@ footer {
     font-size: 14px;
     color: #64748b;
 }
+.etapa summary {
+    list-style: none;
+    display: block;
+}
+
+.etapa summary::-webkit-details-marker {
+    display: none;
+}
+
+.etapa summary::marker {
+    content: "";
+}
+
 /* FLECHAS */
 .flecha {
     font-size: 35px;

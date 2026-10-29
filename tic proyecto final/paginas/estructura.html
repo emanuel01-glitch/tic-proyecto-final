@@ -40,51 +40,55 @@
         <!-- ENTRADA -->
 
         <!-- PROCESAMIENTO -->
-        <button class="etapa"  
-                onclick="mostrarEtapa('entrada')">      
-                <span class="etapa-icono">📥</span>
-            <span class="etapa-titulo">
-                Entrada
-            </span>
-            <span class="etapa-descripcion">
-                Recibimos información
-            </span>
-        </button>
+        <details class="etapa">
+    <summary>
+        <span class="etapa-icono">📥</span>
+        <span class="etapa-titulo">Entrada</span>
+    </summary>
+
+    <span class="etapa-descripcion">
+        Recibimos información
+    </span>
+</details>
             <div class="flecha"> ➜ </div>
-            <button class="etapa">
+            <details class="etapa">
+                <summary>
         <span class="etapa-icono">⚙️</span>
             <span class="etapa-titulo">
                 Procesamiento
             </span>
+                </summary>
             <span class="etapa-descripcion">
                 Se procesan los datos
             </span>
-        </button>
+        </details>
             <div class="flecha"> ➜</div>
         
          <!-- MEMORIA -->
-        <button class="etapa"
-                onclick="mostrarEtapa('memoria')">
-            <span class="etapa-icono">🧠</span>
-            <span class="etapa-titulo">
-                Memoria
-            </span>
+        <details class="etapa">
+            <summary>
+                <span class="etapa-icono">🧠</span>
+                <span class="etapa-titulo">
+                    Memoria
+                </span>
+            </summary>
             <span class="etapa-descripcion">
                 Se mantienen datos
             </span>
-        </button>
+        </details>
         <div class="flecha">  ➜</div>
 <!-- SALIDA -->
-        <button class="etapa"
-                onclick="mostrarEtapa('salida')">
-            <span class="etapa-icono">📤</span>
-            <span class="etapa-titulo">
-                Salida
-            </span>
+        <details class="etapa">
+            <summary>
+                <span class="etapa-icono">📤</span>
+                <span class="etapa-titulo">
+                    Salida
+                </span>
+            </summary>
             <span class="etapa-descripcion">
                 Obtenemos un resultado
             </span>
-        </button>
+        </details>
     </div>
         </section>  
     <!-- INFORMACIÓN DE CADA ETAPA -->
