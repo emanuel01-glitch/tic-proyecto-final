@@ -133,6 +133,83 @@ body {
     border: 3px solid #2563eb;
 }
 
+/* Estilo de la sección principal */
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #1a73e8;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+.activity-item {
+            margin-bottom: 24px;
+        }
+
+        .activity-label {
+            font-size: 15px;
+            font-weight: bold;
+            color: #202124;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-bottom: 4px;
+        }
+
+        .activity-desc {
+            font-size: 14px;
+            color: #5f6368;
+            margin: 0 0 10px 0;
+        }
+
+ /* Estilo del botón interactivo que simula la referencia pero con formato de botón limpio */
+        .presentation-btn {
+            display: inline-block;
+            background-color: #f1f3f4;
+            color: #1a73e8;
+            padding: 8px 16px;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+            border: 1px solid #dadce0;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.2s, box-shadow 0.2s;
+        }
+
+        .presentation-btn:hover {
+            background-color: #e8eaed;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .presentation-btn:active {
+            background-color: #dadce0;
+        }
+
+        .presentation-link {
+            display: inline-block;
+            background-color: #f1f3f4;
+            color: #1a73e8;
+            padding: 8px 16px;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+            border: 1px solid #dadce0;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.2s, box-shadow 0.2s;
+        }
+
+        .presentation-link:hover {
+            background-color: #e8eaed;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .presentation-link:active {
+            background-color: #dadce0;
+        }
 /*ENCABEZADO*/
 header {
     background: linear-gradient(135deg, #5e8cf0, #4f46e5);
