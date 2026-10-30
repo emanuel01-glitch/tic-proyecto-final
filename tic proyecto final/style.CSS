@@ -18,6 +18,121 @@ body {
     color: #263238;
     line-height: 1.6;
 }
+
+/* presentacion de inicio colaboradores*/
+
+/* =================================
+   IMAGEN Y MENSAJE DE BIENVENIDA
+================================= */
+
+.imagen-pensando {
+    width: 640px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+}
+
+.mensaje-bienvenida {
+    background-color: #eef6ff;
+    border-left: 5px solid #2563eb;
+    padding: 18px 22px;
+    margin: 25px auto;
+    max-width: 650px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.mensaje-bienvenida p {
+    font-size: 1.1rem;
+    color: #1e293b;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.boton-empezar {
+    display: inline-block;
+    background-color: #2563eb;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+
+/* =================================
+   SECCIÓN DE CREADORES
+================================= */
+
+#creadores {
+    margin-top: 50px;
+    text-align: center;
+    background-color: #f8fafc;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+}
+
+#creadores h3 {
+    font-size: 1.5rem;
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+.descripcion-creadores {
+    color: #475569;
+    margin-bottom: 25px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =================================
+   TARJETAS DE INTEGRANTES
+================================= */
+
+.integrantes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tarjeta-integrante {
+    background: white;
+    padding: 18px 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    min-width: 220px;
+    border-top: 4px solid #2563eb;
+}
+
+.nombre-integrante {
+    font-weight: bold;
+    color: #1e293b;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.detalle-integrante {
+    font-size: 0.9rem;
+    color: #64748b;
+    margin: 6px 0 0 0;
+}
+
+.foto-integrante {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 12px;
+    border: 3px solid #2563eb;
+}
+
 /*ENCABEZADO*/
 header {
     background: linear-gradient(135deg, #5e8cf0, #4f46e5);
