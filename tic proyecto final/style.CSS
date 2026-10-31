@@ -1053,13 +1053,14 @@ footer {
 
 
 .video-contenido {
-    width: 400px;
-    max-width: 100%;
-    height: auto;
     display: block;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 0px auto;
     border-radius: 10px;
 }
+
 
 .cierre-aprendizaje {
     text-align: center;
